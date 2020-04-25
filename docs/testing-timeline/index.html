@@ -9,20 +9,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Test Document</title>
     <style>
+      @media screen and (min-width: 768px) {
+        #root {
+          width: 513px;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        #root {
+          width: 550px;
+        }
+      }
+      @media screen and (min-width: 1440px) {
+        #root {
+          width: 730px; 
+        }
+      }
       #root {
         min-width: 300px;
         width: 95%;
         margin: 0 auto;
         position: relative;
-        @media screen and (min-width: 768px) {
-          width: 513px;
-        }
-        @media screen and (min-width: 1024px) {
-          width: 550px;
-        }
-        @media screen and (min-width: 1440px) {
-          width: 730px;
-        }
       }
       body {
         background: #f1f1f1;
